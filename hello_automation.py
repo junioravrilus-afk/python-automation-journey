@@ -1,0 +1,1 @@
+print("Mon parcours d'automatisation commence ici !")
