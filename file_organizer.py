@@ -1,3 +1,4 @@
+import sys
 import shutil
 from pathlib import Path
 
@@ -47,4 +48,9 @@ def organize_folder(folder_path):
 
 
 if __name__ == "__main__":
-    organize_folder("test_folder")
+    if len(sys.argv) > 1:
+        target_folder = sys.argv[1]
+    else : 
+        target_folder = "test_folder"
+        
+    organize_folder(target_folder)

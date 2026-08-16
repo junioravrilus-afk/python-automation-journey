@@ -16,4 +16,12 @@ Par défaut, organise le contenu du dossier `test_folder`.
 ## Compétences travaillées
 - Manipulation de fichiers avec `pathlib` et `shutil`
 - Dictionnaires pour le mapping extension → dossier
-- Gestion de cas limites (fichiers en double, casse des extensions)
+- Gestion de cas limites (fichiers en double, casse des extensions) 
+
+## Utilisation avancee 
+
+ si aucun argument n'est fourni, le scriptsutilise 'test_folder' par defaut. 
+
+ ## test 
+
+ ## Installation
