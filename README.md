@@ -23,4 +23,26 @@ Si aucun argument n'est fourni, le script utilise `test_folder` par défaut.
 - Dictionnaires pour le mapping extension → dossier
 - Gestion de cas limites (fichiers en double, casse des extensions)
 - Arguments en ligne de commande avec `sys.argv`
-- Tests automatisés avec `pytest` (fixture `tmp_path`, tests de non-régression)
+- Tests automatisés avec `pytest` (fixture `tmp_path`, tests de non-régression) 
+
+
+---
+
+# Bulk Renamer
+
+Script Python qui renomme en masse des fichiers suivant le motif `IMG_XXXX.jpg`
+vers un nouveau format personnalisable (ex: `vacances_XXXX.jpg`).
+
+## Fonctionnalités
+- Détection des fichiers via expression régulière (`IMG_(\d+)\.jpg`)
+- Préfixe personnalisable
+- Mode simulation (`--dry-run`) pour prévisualiser les changements avant de les appliquer réellement
+
+## Utilisation
+
+
+## Compétences travaillées
+- Expressions régulières (`re.match`, groupes de capture)
+- Arguments en ligne de commande avec `argparse` (arguments positionnels, drapeaux, valeurs par défaut)
+- Pattern "dry-run" pour sécuriser les actions destructives/irréversibles
+- Tests automatisés couvrant à la fois le comportement réel et le mode simulation
