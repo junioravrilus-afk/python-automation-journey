@@ -10,14 +10,14 @@ dans des sous-dossiers selon leur extension (Images, Documents, Musique, Videos)
   (renommage automatique en cas de doublon, ex: photo_1.jpg)
 - Dossier cible configurable via argument en ligne de commande
 
-## Installation
+## Installation 
 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
 
-## Utilisation
+## Utilisation 
 
 python file_organizer.py chemin/vers/mon/dossier
 
@@ -25,7 +25,7 @@ Si aucun argument n'est fourni, le script utilise `test_folder` par defaut.
 
 ## Tests
 
-pytest
+pytest 
 
 
 ## Competences travaillees
@@ -58,3 +58,27 @@ python bulk_renamer.py chemin/vers/mon/dossier --prefix voyage
 - Arguments en ligne de commande avec `argparse` (arguments positionnels, drapeaux, valeurs par defaut)
 - Pattern "dry-run" pour securiser les actions destructives/irreversibles
 - Tests automatises couvrant a la fois le comportement reel et le mode simulation
+
+---
+
+# Excel Report Generator
+
+Script Python qui consolide plusieurs fichiers Excel de ventes mensuelles
+en un seul rapport, avec mise en forme automatique.
+
+## Fonctionnalites
+- Lecture automatique de tous les fichiers correspondant a un motif de nommage
+- Consolidation des donnees par produit (somme des quantites, moyenne des prix)
+- Export Excel avec mise en forme professionnelle (en-tetes stylises, colonnes ajustees)
+
+## Utilisation
+
+python generate_test_data.py
+python excel_report_generator.py
+
+
+## Competences travaillees
+- Manipulation de donnees tabulaires avec `pandas` (DataFrame, groupby, agregations)
+- Mise en forme Excel avec `openpyxl` (styles, largeur de colonnes)
+- Choix d'agregation adaptes a la nature de la donnee (sum vs mean)
+- Tests unitaires isoles, sans dependance au systeme de fichiers
