@@ -4,3 +4,5 @@ __pycache__/
 .env 
 *.xlsx
 .pytest_cache/
+facture_*.docx
+facture_*.pdf

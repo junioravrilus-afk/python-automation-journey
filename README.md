@@ -81,4 +81,31 @@ python excel_report_generator.py
 - Manipulation de donnees tabulaires avec `pandas` (DataFrame, groupby, agregations)
 - Mise en forme Excel avec `openpyxl` (styles, largeur de colonnes)
 - Choix d'agregation adaptes a la nature de la donnee (sum vs mean)
-- Tests unitaires isoles, sans dependance au systeme de fichiers
+- Tests unitaires isoles, sans dependance au systeme de fichiers 
+
+---
+
+# Invoice Generator
+
+Script Python qui genere automatiquement des factures PDF personnalisees
+a partir d'une liste de clients dans un fichier CSV.
+
+## Fonctionnalites
+- Lecture de donnees clients depuis un CSV avec conversion de types
+- Calcul automatique du montant total (quantite x prix unitaire)
+- Generation de documents Word structures avec tableau
+- Numerotation automatique des factures (format FACT-001, FACT-002...)
+- Conversion automatique en PDF (necessite Microsoft Word installe)
+
+## Utilisation
+
+python invoice_generator.py
+
+Lit `clients.csv` et genere une facture .docx et .pdf par client.
+
+## Competences travaillees
+- Lecture de CSV avec `csv.DictReader` et conversion de types (str vers int/float)
+- Generation de documents Word avec `python-docx` (titres, paragraphes, tableaux dynamiques)
+- Conversion docx vers PDF avec `docx2pdf`
+- Formatage de nombres avec zero-padding pour un tri coherent
+- Tests isoles sur la logique de calcul, sans dependance a Word
